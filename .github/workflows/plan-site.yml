@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   build:
-    uses: AbdelrhmanBassiouny/basstler/.github/workflows/plan-site-build.yml@main
+    uses: KAOS-repositories/basstler/.github/workflows/plan-site-build.yml@main
     with:
       basstler_branch_or_tag: main
       registry: tomsch420/business_consulting-notes
