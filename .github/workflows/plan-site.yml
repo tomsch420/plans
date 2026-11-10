@@ -13,7 +13,9 @@ permissions:
 
 jobs:
   build:
-    uses: KAOS-repositories/basstler/.github/workflows/plan-site-build.yml@main
+    uses: KAOS-repositories/basstler/.github/workflows/plan-site-build.yml@release
     with:
-      basstler_branch_or_tag: main
+      basstler_branch_or_tag: release
       registry: tomsch420/business_consulting-notes
+    secrets:
+      read_token: ${{ secrets.PLAN_SITE_READ_TOKEN }}
